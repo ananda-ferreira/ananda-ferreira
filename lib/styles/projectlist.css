@@ -1,0 +1,13 @@
+.projectitem {
+    display: flex;
+    align-items: baseline;
+    gap: var(--gap);
+}
+
+.projectitem > *:nth-child(1) { flex: 1; }
+.projectitem > *:nth-child(2) { flex: 2; }
+.projectitem > *:nth-child(3) { flex: 1; }
+
+.title {
+    display: flex;
+}

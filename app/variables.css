@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('@/lib/fonts/EBGaramond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+
+  /*bg colors*/
+  --bg-hsl: 0, 0%, 0%; /*dark white*/
+  /* --btn-bg-hsl:  0, 0%, 8%;
+  --acc-hsl: 119deg, 100%, 50%; */
+
+  /*font colors*/
+  --h1-hsl: 0, 0%, 94%; /*light grey*/
+  --h2-hsl: 0, 0%, 94%; /*light grey*/
+  --p-hsl: 0, 0%, 94%; /*dark grey*/
+  --s-hsl: 0, 0%, 94%; /*black*/
+  /* --btn-hsl: 0, 0%, 99%;  */
+
+  /*font*/
+  --main-font: 'EB Garamond', serif;
+  --sec-font: 'Inter';
+  --font-size: 8px;
+  --h1: 1.75rem;
+  /* --h2: 3rem; */
+  --p: 2rem;
+  --s: 1.6rem;
+  --h1-line-height: 2.5rem;
+  /* --h2-line-height: 3rem; */
+  --p-line-height: 2.6rem;
+  --s-line-height: 2rem;
+
+  /*margins and paddings*/
+  --mar: 2rem;
+  --top-mar: 40rem;
+  --pad: 1rem;
+  --gap: 1rem;
+  /* --btn-height: 4rem; */
+
+  /*animations*/
+  --trans-dur: 0.25s;
+  --animation-dur: calc(var(--trans-dur) * 2);
+
+  /*z-index*/
+  --nav-z: 5;
+}
+
+
+/**
+* tablet responsive
+*/
+
+@media only screen and (min-width: 768px)  {
+
+  :root {
+    --font-size: 8px;
+  }
+  
+}
+
+/**
+* desktop responsive
+*/
+
+@media only screen and (min-width: 992px) {
+
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* bg color */
+    --bg-hsl: 0, 0%, 100%; /*dark white*/
+
+    /* font color */
+    --h1-hsl: 0, 0%, 0%; /*light grey*/
+    --h2-hsl: 0, 0%, 0%; /*light grey*/
+    --p-hsl: 0, 0%, 0%; /*dark grey*/
+    --s-hsl: 0, 0%, 0%; /*black*/
+  }
+}
