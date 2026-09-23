@@ -11,9 +11,10 @@ export default function CollabList({collaborators}:{collaborators: Collaborator[
           <span key={collab._id+i}>
             <span>
               <a
-                href={collab.url || '#'}
-                target="_blank"
+                href={collab.url || `#`}
+                target={collab.url ? "_blank" : ''}
                 rel={collab.url ? "noopener noreferrer" : ''}
+                className={collab.url ? "" : "notlinked"}
                 >{collab.name}</a>
             </span>
             {i < collaborators.length -1 && <span> / </span> }

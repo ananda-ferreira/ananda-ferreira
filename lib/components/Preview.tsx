@@ -12,7 +12,7 @@ export default function Preview() {
     if (!isMobile) return
     else return (
         <section className="preview">
-            {hoveredProject && <p className="explore">
+            {hoveredProject?.projectUrl && <p className="explore">
                     <a href={hoveredProject.projectUrl} className="" target="_blank" rel="noreferrer">
                         Explore website
                     </a>

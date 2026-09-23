@@ -32,8 +32,8 @@ a {
   text-decoration: none;
 }
 
-a:hover p {
-  text-decoration: underline !important;
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
