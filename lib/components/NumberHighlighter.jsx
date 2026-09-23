@@ -1,4 +1,3 @@
-import "@/lib/styles/number-highlighter.css"
 export default function NumberHighlighter({ data, tag = 'p' }) {
   const Tag = tag;
   const parts = data.split(/(\d+)/g);

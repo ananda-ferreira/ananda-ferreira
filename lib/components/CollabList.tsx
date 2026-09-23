@@ -1,25 +1,25 @@
 import { Collaborator } from '../types/sanity'
+import "@/lib/styles/collablist.css"
 
 export default function CollabList({collaborators}:{collaborators: Collaborator[]}) {
   
-  if (collaborators.length < 0) return (
-    <section>
-        <h3>Collaborators</h3>
-        <p>
+  return (
+    <section className="collab grid">
+      <p>Collaborators: </p>
+      <p>
         {collaborators.map((collab: Collaborator, i: number) => (
-            <>
+          <span key={collab._id+i}>
             <span>
-            <a
-                key={collab._id}
+              <a
                 href={collab.url || '#'}
                 target="_blank"
-                rel="noopener noreferrer"
-            >{collab.name}</a>
+                rel={collab.url ? "noopener noreferrer" : ''}
+                >{collab.name}</a>
             </span>
-            {i === collaborators.length && <span>/</span> }
-            </>
+            {i < collaborators.length -1 && <span> / </span> }
+          </span>
         ))}
-        </p>
+      </p>
     </section>
   )
 }

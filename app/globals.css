@@ -32,9 +32,8 @@ a {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+a:hover p {
+  text-decoration: underline !important;
 }
 
 h1 {
@@ -71,14 +70,11 @@ header {
 }
 
 main {
-  
-  margin: var(--top-mar) var(--mar) 8rem;
-  /* position: absolute; */
+  margin: var(--top-mar) var(--mar) var(--top-mar);
 }
 
 footer {
-  width: calc(100% - var(--mar)*2);
-  margin: 0 var(--mar) var(--mar) var(--mar);
+  margin-top: 8rem;
 }
 
 .photolink {
@@ -86,7 +82,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
-  margin-top: 4rem;
+  margin-top: var(--top-mar);
   border-top: 1px solid hsl(var(--p-hsl));
   font-variant-caps: all-small-caps;
 }
@@ -96,6 +92,12 @@ footer {
   font-variant-caps: all-small-caps;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    align-items: baseline;
+    gap: var(--gap);
+}
 
 /**
 * tablet responsive

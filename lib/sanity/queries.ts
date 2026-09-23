@@ -30,7 +30,7 @@ export const PROJECT_QUERY = defineQuery(
 
 // Get all collaborators
 export const COLLABORATORS_QUERY = defineQuery(
-  `*[_type == "collaborator"] | order(name asc) {
+  `*[_type == "collaborators"] | order(name asc) {
     _id,
     name,
     url
