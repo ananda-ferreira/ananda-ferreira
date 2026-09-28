@@ -13,7 +13,7 @@ export default async function HomePage() {
     client.fetch(PROJECTS_QUERY, {}, options),
     client.fetch(COLLABORATORS_QUERY, {}, options),
   ])
-
+    
   return (
     <div>
       <ProjectPreviewWrapper>

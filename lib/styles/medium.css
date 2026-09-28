@@ -1,0 +1,45 @@
+.medium {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* backup for projects
+.videowrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;
+  overflow: hidden !important;
+  flex-direction: row;
+  position: absolute;
+} */
+
+.videowrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  flex-direction: row;
+  position: relative;
+}
+
+.vimeo {
+  z-index: calc(var(--z-index) - 1);
+  pointer-events: none !important;
+  min-width: 100%;
+  min-height: 100%; /*for portrait height: */
+  position: absolute;
+  width: 100%;
+  height: unset;
+}
+
+.vimeo iframe {
+  pointer-events: none !important;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}

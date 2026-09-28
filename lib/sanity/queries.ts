@@ -1,16 +1,38 @@
 import { defineQuery } from "next-sanity";
 
+const MEDIUM_FRAGMENT = `
+  medium[] {
+    _type,
+    _type == 'image' => {
+      asset->{
+        url,
+        metadata {
+          dimensions
+        }
+      },
+      alt
+    },
+    _type,
+    _type == 'customVideo' => {
+      video {
+        asset->{
+          url
+        }
+      },
+      arWidth,
+      arHeight
+    }
+  }
+`;
+
 // Get all projects for the portfolio page
 export const PROJECTS_QUERY = defineQuery(
   `*[_type == "projects" && defined(slug.current)] | order(publishedAt desc, _createdAt desc) {
     _id,
     title,
-    slug,
     projectUrl,
-    githubUrl,
     publishedAt,
-    favIcon,
-    medium
+    ${MEDIUM_FRAGMENT}
   }`
 );
 
@@ -24,7 +46,7 @@ export const PROJECT_QUERY = defineQuery(
     githubUrl,
     publishedAt,
     favIcon,
-    medium
+    ${MEDIUM_FRAGMENT}
   }`
 );
 
