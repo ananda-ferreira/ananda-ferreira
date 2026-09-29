@@ -3,30 +3,28 @@ import useIsMobile from "../hooks/useIsMobile"
 import { useHoveredProject } from '@/lib/context/ProjectPreviewWrapper';
 import Medium  from '@/lib/components/Medium';
 import '@/lib/styles/preview.css'
-import { Project } from "../types/sanity";
 
 export default function Preview() {
     const isMobile = useIsMobile()
 
     const {hoveredProject} = useHoveredProject()
     
-    if (!isMobile) return
-    else return (
+    // if (!isMobile) return
+    // else 
+        return (
         <section className="preview">
-            {hoveredProject?.projectUrl && <p className="explore">
+            {isMobile && hoveredProject?.projectUrl && <p className="explore">
                 <a href={hoveredProject.projectUrl} className="" target="_blank" rel="noreferrer">
                     Explore website
                 </a>
             </p>}
             <div className="mediumwrapper grid">
-                {/* {hoveredProject && <div> */}
                     {hoveredProject?.medium && <Medium 
                         medium={hoveredProject.medium[0]}
                         medStyle={undefined}
                         objectFit={""}
                         cName={""} 
                     />}
-                {/* </div>} */}
             </div>
         </section>
     )

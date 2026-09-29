@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./variables.css";
 import "./globals.css";
 import Header from "@/lib/components/Header";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Ananda Ferreira",
@@ -18,6 +19,9 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
+      <Head>
+                <link rel="icon" href="/ananda-icon.svg" />
+      </Head>
       <body className="antialiased">
         <Header />
         <main>

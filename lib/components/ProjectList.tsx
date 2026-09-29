@@ -52,7 +52,7 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                     <p className="number">{project.publishedAt}</p>
                     {hoveredProject?._id === project._id 
                         && hoveredProject.projectUrl 
-                        && <p>Explore Website</p>}
+                        && <p>Explore website</p>}
                 </a>
          ))} </>
         }     
