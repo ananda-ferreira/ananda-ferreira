@@ -1,8 +1,14 @@
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   height: 100%;
   font-size: var(--font-size);
   scroll-behavior: smooth;
+  scrollbar-width: none; /*firefox*/
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge legacy */
 }
 
 html,
