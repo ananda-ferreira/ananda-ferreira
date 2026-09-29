@@ -76,7 +76,7 @@ main {
 }
 
 footer {
-  margin-top: 8rem;
+    margin-top: var(--section-mar);
 }
 
 .photolink {

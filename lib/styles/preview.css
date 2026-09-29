@@ -1,9 +1,10 @@
 .preview {
     --vid-width: calc((100vw - 3*var(--gap) - 2*var(--mar))/4*3);
     --vid-height: calc( var(--vid-width) / 3 * 2);
+    /* height: calc(var(--vid-height) + var(--p) + var(--pad)); */
+    /* margin-top: calc(50vh - var(--top-mar)); */
     width: 100%;
     height: calc(50vh - var(--mar));
-    top: var(--mar);
     display: flex;
     flex-direction: column;
     flex-shrink: unset;

@@ -12,10 +12,10 @@ export default function ProjectList({projects}: {projects: Project[]}) {
     const {hoveredProject, setHoveredProject} = useHoveredProject()
     const isMobile = useIsMobile()
 
-    useEffect(()=>{
-        if (hoveredProject === null) setHoveredProject(projects[0])
-        // return () => {setHoveredProject(null)}
-    })
+    // useEffect(()=>{
+    //     if (hoveredProject === null) setHoveredProject(projects[0])
+    //     // return () => {setHoveredProject(null)}
+    // })
 
     return (
     <section className="projectlist">   
