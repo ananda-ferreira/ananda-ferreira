@@ -25,7 +25,7 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                 return( <div
                     className={`project grid ${isSelected ? 'selected' : ''}`}
                     key={project._id}
-                    onTouchStart={() => setHoveredProject(project)}
+                    onClick={() => setHoveredProject(project)}
                 >
                     <p className="number">{i}</p>
                     <div className="title">

@@ -2,7 +2,7 @@
 html {
   height: 100%;
   font-size: var(--font-size);
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
