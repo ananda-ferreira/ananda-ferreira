@@ -50,6 +50,9 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                         <NumberHighlighter data={project.title} />
                     </div>
                     <p className="number">{project.publishedAt}</p>
+                    {hoveredProject?._id === project._id 
+                        && hoveredProject.projectUrl 
+                        && <p>Explore Website</p>}
                 </a>
          ))} </>
         }     

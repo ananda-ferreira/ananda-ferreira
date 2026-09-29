@@ -122,9 +122,21 @@ footer {
     margin: var(--mar);
   }
 
+  .grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr)); 
+  }
+
   footer {
-    width: 50%;
-    margin: var(--mar);
+    width: calc(50vw - var(--mar));
+    position: absolute;
+    bottom: var(--mar);
+    right: var(--mar);
+    display: flex;
+  }
+
+  .photolink {
+    width: calc((100% - 5* var(--gap))/6*2);
+    margin-top: 0;
   }
 }
 

@@ -8,3 +8,25 @@ a.notlinked:hover {
     cursor: default;
     text-decoration: none;
 }
+
+/**
+* tablet responsive
+*/
+
+@media only screen and (min-width: 768px)  {
+
+    .collab {
+        width: calc(50vw - var(--mar));
+        margin-left: auto;
+    }
+  
+}
+
+/**
+* desktop responsive
+*/
+
+@media only screen and (min-width: 992px) {
+
+
+}

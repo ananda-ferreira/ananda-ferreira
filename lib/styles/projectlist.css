@@ -1,5 +1,5 @@
 .projectlist {
-    position: relative;
+    /* position: relative; */
 }
 
 .project.grid {
@@ -19,4 +19,37 @@
 
 .project.grid .title {
     display: flex;
+}
+
+
+
+/**
+* tablet responsive
+*/
+
+@media only screen and (min-width: 768px)  {
+
+    .projectlist {
+        width: calc(50vw - var(--mar));
+        margin-left: auto;
+    }
+
+    .project.grid > *:nth-child(3) { 
+        /* text-align: left; */
+    }
+
+    .project.grid > *:nth-child(4) { 
+    grid-column: 5; 
+    text-align: right;
+}
+  
+}
+
+/**
+* desktop responsive
+*/
+
+@media only screen and (min-width: 992px) {
+
+
 }
