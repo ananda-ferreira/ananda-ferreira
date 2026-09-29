@@ -1,7 +1,9 @@
 .preview {
-    width: calc(100%);
-    height: auto;
-    margin-top: 24rem;
+    --vid-width: calc((100vw - 3*var(--gap) - 2*var(--mar))/4*3);
+    --vid-height: calc( var(--vid-width) / 3 * 2);
+    width: 100%;
+    height: calc(var(--vid-height) + var(--p) + var(--pad));
+    margin-top: 16rem;
     position: sticky;
     top: 12rem;
     /* top: var(--mar); */
