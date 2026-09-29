@@ -3,12 +3,11 @@ import Video from "./Video"
 import { MediumImage, MediumVideo } from "../types/sanity"
 import '@/lib/styles/medium.css'
 
-export default function Medium({medium, medStyle, objectFit, cName, paused=false, muted=true, autoplay=true}: {
+export default function Medium({medium, medStyle, objectFit, cName, muted=true, autoplay=true}: {
   medium: MediumImage | MediumVideo,
   medStyle?: any,
   objectFit: string, 
   cName?: string, 
-  paused?: boolean, 
   muted?: boolean, 
   autoplay?: boolean,
 }) {
@@ -21,9 +20,8 @@ export default function Medium({medium, medStyle, objectFit, cName, paused=false
         alt={medium.alt || ""}
         width={medium.asset.metadata.dimensions.width}
         height={medium.asset.metadata.dimensions.height}
-        priority
         preload
-        placeholder="blur"
+        // placeholder="blur"
       />
     )
   } 

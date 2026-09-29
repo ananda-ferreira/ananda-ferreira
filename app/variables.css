@@ -46,7 +46,8 @@
   --animation-dur: calc(var(--trans-dur) * 2);
 
   /*z-index*/
-  --nav-z: 5;
+  --nav-z: 10;
+  --prev-z: 5;
 }
 
 

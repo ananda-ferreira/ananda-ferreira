@@ -4,10 +4,14 @@
     display: flex;
     flex-direction: column;
     top: var(--mar);
-    width: calc(100%);
+    width: calc(100% - 2* var(--mar));
     flex-shrink: unset;
     justify-content: end;
-    /* position:fixed; */
+    /* for mobile prev style */
+    position:fixed;
+    background-color: hsl(var(--bg-hsl));
+    z-index: var(--prev-z);
+    padding-bottom: var(--mar);
 }
 
 .explore {

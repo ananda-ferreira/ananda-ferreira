@@ -6,16 +6,21 @@ import Prefix from "@/lib/components/Prefix";
 import NumberHighlighter from "@/lib/components/NumberHighlighter";
 import { useHoveredProject } from "../context/ProjectPreviewWrapper";
 import useIsMobile from "../hooks/useIsMobile";
+import { useEffect } from "react";
 
 export default function ProjectList({projects}: {projects: Project[]}) {
     const {hoveredProject, setHoveredProject} = useHoveredProject()
     const isMobile = useIsMobile()
 
+    useEffect(()=>{
+        if (hoveredProject === null) setHoveredProject(projects[0])
+        // return () => {setHoveredProject(null)}
+    })
+
     return (
     <section className="projectlist">   
         {isMobile 
             ? <>{projects?.map((project: Project, i: number) => {
-                // const isSelected: boolean = false
                 const isSelected = hoveredProject?._id === project._id
                 return( <div
                     className={`project grid ${isSelected ? 'selected' : ''}`}

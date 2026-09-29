@@ -1,6 +1,5 @@
 .projectlist {
     position: relative;
-    padding-top: var(--mar);
 }
 
 .project.grid {

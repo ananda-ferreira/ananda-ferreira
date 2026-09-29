@@ -67,10 +67,12 @@ header {
   width: inherit;
   margin: var(--mar);
   position: fixed;
+  z-index: var(--nav-z);
 }
 
 main {
-  margin: var(--top-mar) var(--mar) var(--top-mar);
+  margin: calc(50vh) var(--mar) var(--top-mar);
+  
 }
 
 footer {
