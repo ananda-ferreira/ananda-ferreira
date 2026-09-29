@@ -1,14 +1,14 @@
 .preview {
-    height: calc(50vh - var(--mar));
-    /* padding-top: 24rem; */
+    width: calc(100%);
+    height: auto;
+    margin-top: 24rem;
+    position: sticky;
+    top: 12rem;
+    /* top: var(--mar); */
     display: flex;
     flex-direction: column;
-    top: var(--mar);
-    width: calc(100% - 2* var(--mar));
     flex-shrink: unset;
     justify-content: end;
-    /* for mobile prev style */
-    position:fixed;
     background-color: hsl(var(--bg-hsl));
     z-index: var(--prev-z);
     padding-bottom: var(--mar);

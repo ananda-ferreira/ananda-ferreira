@@ -5,7 +5,7 @@ export default function CollabList({collaborators}:{collaborators: Collaborator[
   
   return (
     <section className="collab grid">
-      <p>Collaborators: </p>
+      <p>Co-creators: </p>
       <p>
         {collaborators.map((collab: Collaborator, i: number) => (
           <span key={collab._id+i}>
