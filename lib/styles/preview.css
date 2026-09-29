@@ -2,11 +2,8 @@
     --vid-width: calc((100vw - 3*var(--gap) - 2*var(--mar))/4*3);
     --vid-height: calc( var(--vid-width) / 3 * 2);
     width: 100%;
-    height: calc(var(--vid-height) + var(--p) + var(--pad));
-    margin-top: 16rem;
-    position: sticky;
-    top: 12rem;
-    /* top: var(--mar); */
+    height: calc(50vh - var(--mar));
+    top: var(--mar);
     display: flex;
     flex-direction: column;
     flex-shrink: unset;
@@ -15,6 +12,23 @@
     z-index: var(--prev-z);
     padding-bottom: var(--mar);
 }
+/* for sticky preview
+.preview {
+    --vid-width: calc((100vw - 3*var(--gap) - 2*var(--mar))/4*3);
+    --vid-height: calc( var(--vid-width) / 3 * 2);
+    width: 100%;
+    height: calc(var(--vid-height) + var(--p) + var(--pad));
+    margin-top: 16rem;
+    position: sticky;
+    top: 12rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: unset;
+    justify-content: end;
+    background-color: hsl(var(--bg-hsl));
+    z-index: var(--prev-z);
+    padding-bottom: var(--mar);
+} */
 
 .explore {
     width: 100%;
