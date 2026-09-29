@@ -1,5 +1,6 @@
 import { Collaborator } from '../types/sanity'
 import "@/lib/styles/collablist.css"
+import NumberHighlighter from './NumberHighlighter'
 
 export default function CollabList({collaborators}:{collaborators: Collaborator[]}) {
   
@@ -15,7 +16,7 @@ export default function CollabList({collaborators}:{collaborators: Collaborator[
                 target={collab.url ? "_blank" : ''}
                 rel={collab.url ? "noopener noreferrer" : ''}
                 className={collab.url ? "" : "notlinked"}
-                >{collab.name}</a>
+                ><NumberHighlighter data={collab.name} tag={"span"} /> </a>
             </span>
             {i < collaborators.length -1 && <span> / </span> }
           </span>
