@@ -150,7 +150,7 @@ footer {
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  p, h1 {
     mix-blend-mode: difference;
   }
 }
