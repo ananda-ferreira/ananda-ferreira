@@ -8,6 +8,7 @@
     background-color: hsl(var(--bg-hsl));
     z-index: var(--prev-z);
     padding-bottom: var(--mar);
+    scroll-snap-align: start;
 }
 
 .explore {

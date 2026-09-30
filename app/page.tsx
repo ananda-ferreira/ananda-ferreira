@@ -15,13 +15,13 @@ export default async function HomePage() {
   ])
     
   return (
-    <div>
+    <>
       <ProjectPreviewWrapper>
         <Preview />
         <ProjectList projects={projects} />
       </ProjectPreviewWrapper>
       {collaborators && <CollabList collaborators={collaborators} />}
       <Footer />
-    </div>
+    </>
   )
 }
