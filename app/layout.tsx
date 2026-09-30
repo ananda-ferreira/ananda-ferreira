@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Web Developer based in Copenhagen",
   icons: {
     icon: "/ananda-icon.svg",
+    apple: '/ananda-icon.svg',
   },
 }
 
