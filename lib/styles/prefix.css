@@ -1,16 +1,19 @@
-.prefixwrap {
-  display: none;
-}
 
 .prefix {
   letter-spacing: -20%;
+  display: none;
+}
+
+.dot {
+  display: none;
 }
 
 /**
 * tablet responsive
 */
 @media only screen and (min-width: 768px)  {
-  .prefixwrap {
+  .prefix,
+  .dot {
     display: block;
   }
 }

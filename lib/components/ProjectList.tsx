@@ -6,7 +6,6 @@ import Prefix from "@/lib/components/Prefix";
 import NumberHighlighter from "@/lib/components/NumberHighlighter";
 import { useHoveredProject } from "../context/ProjectPreviewWrapper";
 import useIsMobile from "../hooks/useIsMobile";
-import { useEffect } from "react";
 
 export default function ProjectList({projects}: {projects: Project[]}) {
     const {hoveredProject, setHoveredProject} = useHoveredProject()
@@ -19,8 +18,8 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                 const isSelected = hoveredProject?._id === project._id
                 return( <div
                     className={`project grid ${isSelected ? 'selected' : ''}`}
-                    key={project._id}
                     onClick={() => setHoveredProject(project)}
+                    key={project._id}
                 >
                     <p className="number">{i}</p>
                     <p className="title">
@@ -32,12 +31,12 @@ export default function ProjectList({projects}: {projects: Project[]}) {
             })} </>
             : <>{projects?.map((project: Project, i: number) => (
                 <a
-                    href={project.projectUrl || ""}
                     className="project grid"
-                    key={project._id}
+                    href={project.projectUrl || ""}
                     target="_blank"
                     onMouseEnter={() => setHoveredProject(project)}
                     onMouseLeave={() => setHoveredProject(null)}
+                    key={project._id}
                 >
                     <p className="number">{i}</p>
                     <p className="title">
