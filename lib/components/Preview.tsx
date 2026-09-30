@@ -8,11 +8,11 @@ export default function Preview() {
 
     return (
         <section className="preview">
-            {hoveredProject?.projectUrl && <p className="explore">
-                <a href={hoveredProject.projectUrl} className="" target="_blank" rel="noreferrer">
+            <p className={`explore ${hoveredProject?.projectUrl ? "" : 'blendout'}`}>
+                <a href={hoveredProject?.projectUrl || ''} className="" target="_blank" rel="noreferrer">
                     Explore website
                 </a>
-            </p>}
+            </p>
             <div className="mediumwrapper grid">
                     {hoveredProject?.medium && <Medium 
                         medium={hoveredProject.medium[0]}

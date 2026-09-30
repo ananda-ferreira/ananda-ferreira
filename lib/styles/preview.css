@@ -16,6 +16,10 @@
     text-decoration: underline;
 }
 
+.explore.blendout {
+    display: none;
+}
+
 .mediumwrapper.grid {
     margin-top: var(--gap);
 }
