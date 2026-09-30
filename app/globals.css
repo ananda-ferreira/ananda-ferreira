@@ -148,3 +148,9 @@ footer {
     color-scheme: dark;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    mix-blend-mode: difference;
+  }
+}

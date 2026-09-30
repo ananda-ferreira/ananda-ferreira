@@ -83,10 +83,10 @@
     --bg-hsl: 0, 0%, 100%; /*dark white*/
 
     /* font color */
-    --h1-hsl: 0, 0%, 0%; /*light grey*/
-    --h2-hsl: 0, 0%, 0%; /*light grey*/
-    --p-hsl: 0, 0%, 0%; /*dark grey*/
-    --s-hsl: 0, 0%, 0%; /*black*/
+    /* --h1-hsl: 0, 0%, 0%; 
+    --h2-hsl: 0, 0%, 0%; 
+    --p-hsl: 0, 0%, 0%; 
+    --s-hsl: 0, 0%, 0%; */
 
     --brightness: 100%;
   }
