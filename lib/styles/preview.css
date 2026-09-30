@@ -41,6 +41,10 @@
     padding-bottom: 0;
 }
 
+.explore {
+    display: none;
+}
+
 .mediumwrapper.grid {
     margin-top: 0;
 }
