@@ -1,6 +1,11 @@
-.project.grid {
+.project.grid:not(:first-child) {
     padding: calc(var(--pad)/4) 0;
 }
+
+.project.grid:first-child {
+    padding: 0 0 calc(var(--pad)/4) 0;
+}
+
 
 .project.grid.selected p {
     text-decoration: underline;
@@ -29,6 +34,7 @@
     .projectlist {
         width: calc(50vw - var(--mar));
         margin-left: auto;
+        margin-top: var(--h1-line-height);
     }
 
     .project.grid > *:nth-child(4) { 
