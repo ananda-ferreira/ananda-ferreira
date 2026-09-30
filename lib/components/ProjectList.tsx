@@ -12,11 +12,6 @@ export default function ProjectList({projects}: {projects: Project[]}) {
     const {hoveredProject, setHoveredProject} = useHoveredProject()
     const isMobile = useIsMobile()
 
-    // useEffect(()=>{
-    //     if (hoveredProject === null) setHoveredProject(projects[0])
-    //     // return () => {setHoveredProject(null)}
-    // })
-
     return (
     <section className="projectlist">   
         {isMobile 
@@ -28,10 +23,10 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                     onClick={() => setHoveredProject(project)}
                 >
                     <p className="number">{i}</p>
-                    <div className="title">
+                    <p className="title">
                         <Prefix />
                         <NumberHighlighter data={project.title} />
-                    </div>
+                    </p>
                     <p className="number">{project.publishedAt}</p>
                 </div>)
             })} </>
@@ -45,10 +40,10 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                     onMouseLeave={() => setHoveredProject(null)}
                 >
                     <p className="number">{i}</p>
-                    <div className="title">
+                    <p className="title">
                         <Prefix />
                         <NumberHighlighter data={project.title} />
-                    </div>
+                    </p>
                     <p className="number">{project.publishedAt}</p>
                     {hoveredProject?._id === project._id 
                         && hoveredProject.projectUrl 

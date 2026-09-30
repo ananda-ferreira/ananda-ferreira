@@ -1,6 +1,6 @@
 import "@/lib/styles/prefix.css"
 
 export default function Prefix() {
-  return <p className="prefixwrap"><span className="prefix">www</span> .</p>
+  return <><span className="prefix">www</span><span className="dot"> .</span></>
 
 }
