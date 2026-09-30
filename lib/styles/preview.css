@@ -59,7 +59,7 @@
     aspect-ratio:unset;
     width: 100vw;
     height: 100vh;
-    filter: brightness(80%);
+    filter: brightness(var(--brightness));
 }
 }
 
