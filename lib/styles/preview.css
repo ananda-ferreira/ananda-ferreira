@@ -8,6 +8,7 @@
     background-color: hsl(var(--bg-hsl));
     z-index: var(--prev-z);
     padding-bottom: var(--mar);
+    padding-top: var(--top-mar);
     scroll-snap-align: start;
 }
 
@@ -44,6 +45,7 @@
     top: 0;
     left: 0;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .explore {

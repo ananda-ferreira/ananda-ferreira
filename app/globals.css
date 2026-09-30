@@ -78,7 +78,7 @@ header {
 }
 
 main {
-  margin: var(--top-mar) var(--mar) var(--top-mar);
+  margin: 0 var(--mar) 0;
 }
 
 footer {
