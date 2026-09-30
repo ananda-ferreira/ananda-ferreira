@@ -112,20 +112,14 @@ footer {
 */
 @media only screen and (min-width: 768px)  {
 
-}
-
-/**
-* desktop responsive
-*/
-@media only screen and (min-width: 992px) {
   main {
     margin: var(--mar);
   }
-
+  
   .grid {
     grid-template-columns: repeat(6, minmax(0, 1fr)); 
   }
-
+  
   footer {
     width: calc(50vw - var(--mar));
     position: absolute;
@@ -133,11 +127,17 @@ footer {
     right: var(--mar);
     display: flex;
   }
-
+  
   .photolink {
     width: calc((100% - 5* var(--gap))/6*2);
     margin-top: 0;
   }
+}
+
+/**
+* desktop responsive
+*/
+@media only screen and (min-width: 992px) {
 }
 
 @media (prefers-color-scheme: dark) {
