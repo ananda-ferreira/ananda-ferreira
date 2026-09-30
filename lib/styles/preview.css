@@ -56,7 +56,9 @@
 
 .mediumwrapper.grid > * {
     grid-column: 1/7;
-    aspect-ratio: 16/9;
+    aspect-ratio:unset;
+    width: 100vw;
+    height: 100vh;
     filter: brightness(80%);
 }
 }
