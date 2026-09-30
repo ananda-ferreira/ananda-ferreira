@@ -34,10 +34,6 @@
         margin-left: auto;
     }
 
-    .project.grid > *:nth-child(3) { 
-        /* text-align: left; */
-    }
-
     .project.grid > *:nth-child(4) { 
     grid-column: 5; 
     text-align: right;
