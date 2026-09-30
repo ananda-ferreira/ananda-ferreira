@@ -49,6 +49,8 @@
   /*z-index*/
   --nav-z: 10;
   --prev-z: 5;
+
+  --brightness: 80%;
 }
 
 
@@ -85,5 +87,7 @@
     --h2-hsl: 0, 0%, 0%; /*light grey*/
     --p-hsl: 0, 0%, 0%; /*dark grey*/
     --s-hsl: 0, 0%, 0%; /*black*/
+
+    --brightness: 120%;
   }
 }
