@@ -16,7 +16,7 @@ export default function CollabList({collaborators}:{collaborators: Collaborator[
                 target={collab.url ? "_blank" : ''}
                 rel={collab.url ? "noopener noreferrer" : ''}
                 className={collab.url ? "" : "notlinked"}
-                ><NumberHighlighter data={collab.name} tag={"span"} /> </a>
+                ><NumberHighlighter data={collab.name} /> </a>
             </span>
             {i < collaborators.length -1 && <span> / </span> }
           </span>
