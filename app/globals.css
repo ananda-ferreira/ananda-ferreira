@@ -1,6 +1,7 @@
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
+  -webkit-appearance: none;
 }
 
 html {
@@ -11,6 +12,7 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   will-change: scroll-snap-type;
+  overflow-y: auto;
 }
 
 html,
