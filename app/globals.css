@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  min-height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: var(--main-font);
@@ -82,6 +82,7 @@ header {
 
 main {
   margin: 0 var(--mar) 0;
+  height: 100%;
 }
 
 footer {
