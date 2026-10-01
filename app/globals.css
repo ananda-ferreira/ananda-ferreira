@@ -9,10 +9,7 @@ html {
   font-size: var(--font-size);
   scrollbar-width: none; /*firefox*/
   -ms-overflow-style: none; /* Hide scrollbar for IE/Edge legacy */
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  will-change: scroll-snap-type;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 html,
@@ -21,6 +18,7 @@ body {
 }
 
 body {
+  overflow-y: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,14 +79,18 @@ header {
 }
 
 main {
+  height: inherit;
   margin: 0 var(--mar) 0;
-  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  will-change: scroll-snap-type;
+  overflow-y: auto;
 }
 
 footer {
+    scroll-snap-align: end;
     margin-top: var(--section-mar);
     padding-bottom: var(--top-mar);
-    scroll-snap-align: end;
 }
 
 .photolink {
