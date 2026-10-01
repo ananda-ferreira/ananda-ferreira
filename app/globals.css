@@ -81,7 +81,7 @@ header {
 main {
   height: inherit;
   margin: 0 var(--mar) 0;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y proximity; */
   scroll-behavior: smooth;
   will-change: scroll-snap-type;
   overflow-y: auto;
