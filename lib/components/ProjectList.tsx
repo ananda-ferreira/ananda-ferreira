@@ -32,7 +32,7 @@ export default function ProjectList({projects}: {projects: Project[]}) {
             : <>{projects?.map((project: Project, i: number) => (
                 <a
                     className="project grid"
-                    href={project.projectUrl || ""}
+                    href={project.projectUrl || "#"}
                     target="_blank"
                     onMouseEnter={() => setHoveredProject(project)}
                     onMouseLeave={() => setHoveredProject(null)}
