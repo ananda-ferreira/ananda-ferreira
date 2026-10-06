@@ -30,9 +30,9 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                 </div>)
             })} </>
             : <>{projects?.map((project: Project, i: number) => (
-                <a
-                    className="project grid"
-                    href={project.projectUrl || "#"}
+                project.projectUrl ? (<a
+                    className={`project grid`}
+                    href={project.projectUrl}
                     target="_blank"
                     onMouseEnter={() => setHoveredProject(project)}
                     onMouseLeave={() => setHoveredProject(null)}
@@ -44,10 +44,21 @@ export default function ProjectList({projects}: {projects: Project[]}) {
                         <NumberHighlighter data={project.title} />
                     </p>
                     <p className="number">{project.publishedAt}</p>
-                    {hoveredProject?._id === project._id 
-                        && hoveredProject.projectUrl 
-                        && <p>Explore website</p>}
-                </a>
+                    {hoveredProject?._id === project._id && <p>Explore website</p>}
+                </a>)
+                : (<div
+                    className={`project grid`}
+                    onMouseEnter={() => setHoveredProject(project)}
+                    onMouseLeave={() => setHoveredProject(null)}
+                    key={project._id}
+                >
+                    <p className="number">{i}</p>
+                    <p className="title">
+                        <Prefix />
+                        <NumberHighlighter data={project.title} />
+                    </p>
+                    <p className="number">{project.publishedAt}</p>
+                </div>)
          ))} </>
         }     
     </section>

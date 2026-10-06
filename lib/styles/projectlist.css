@@ -1,3 +1,8 @@
+div.project.grid:hover {
+  text-decoration: underline;
+  cursor: default;
+}
+
 .project.grid:not(:first-child) {
     padding: calc(var(--pad)/4) 0;
 }
