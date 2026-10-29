@@ -4,10 +4,17 @@ export default function Footer() {
       <footer>
           <p>&copy; <span className="number">{new Date().getFullYear().toString()}</span> Ananda Ferreira. All rights reserved.</p>
           <a className="photolink" href="#"> 
-            <p>photography</p> 
-            <p>(soon)</p>
-            {/* <p>→</p> */}
+            <p><span><a href="mailto:hi@anandaferreira.com">write me an email</a></span></p> 
+            <p>→</p>
           </a>
       </footer>
+      // <footer>
+      //     <p>&copy; <span className="number">{new Date().getFullYear().toString()}</span> Ananda Ferreira. All rights reserved.</p>
+      //     <a className="photolink" href="#"> 
+      //       <p>photography</p> 
+      //       <p>(soon)</p>
+      //       {/* <p>→</p> */}
+      //     </a>
+      // </footer>
   )
 }
