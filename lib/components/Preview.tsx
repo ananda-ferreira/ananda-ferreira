@@ -15,6 +15,11 @@ export default function Preview() {
             </p>
             <div className="mediumwrapper grid">
                     {hoveredProject?.medium && <Medium 
+                        key={
+                            hoveredProject.medium[0]._type === 'image'
+                            ? hoveredProject.medium[0].asset.url
+                            : hoveredProject.medium[0].video.asset.url
+                        }  // ← this
                         medium={hoveredProject.medium[0]}
                         medStyle={undefined}
                         objectFit={""}
