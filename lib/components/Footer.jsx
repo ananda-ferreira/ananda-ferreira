@@ -3,8 +3,8 @@ export default function Footer() {
   return (
       <footer>
           <p>&copy; <span className="number">{new Date().getFullYear().toString()}</span> Ananda Ferreira. All rights reserved.</p>
-          <a className="photolink" href="#"> 
-            <p><span><a href="mailto:hi@anandaferreira.com">write me an email</a></span></p> 
+          <a className="photolink" href="mailto:hi@anandaferreira.com"> 
+            <p>write me an email</p> 
             <p>→</p>
           </a>
       </footer>
